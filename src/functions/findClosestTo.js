@@ -11,6 +11,5 @@ export function findClosestTo(mkadCords, markerCords) {
     digitsArr.push(d);
   }
   let closest = tempCordsArr.find(elem => Math.min(...digitsArr) === elem.digit);
-  let neededMkadCords = mkadCords[closest.id];
-  return neededMkadCords;
+  return mkadCords[closest.id];
 }
